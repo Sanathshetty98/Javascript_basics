@@ -3,7 +3,7 @@ var mark = {
     weight : 60,
     height : 1.5,
     calc_bmi : function(){
-        return this.weight/(this.height^2)
+        this.bmi = (this.weight/(this.height^2)).toFixed(2)
     }
 };
 
@@ -12,16 +12,18 @@ var john = {
     weight : 50,
     height : 1.6,
     calc_bmi : function(){
-        return this.weight/(this.height^2)
+        this.bmi = (this.weight/(this.height^2)).toFixed(2)
     }
 };
 
 
-console.log(mark.calc_bmi());
-console.log(john.calc_bmi().toFixed(2));
-if( mark.calc_bmi>john.calc_bmi){
-    console.log("Mark's BMI is greater");
+mark.calc_bmi();
+john.calc_bmi();
+console.log(mark.bmi);
+console.log(john.bmi);
+if( mark.bmi>john.bmi){
+    console.log( mark.name + "'s BMI is greater");
 }
 else{
-    console.log("John's BMI is greater");
+    console.log( john.name + "'s BMI is greater");
 }
