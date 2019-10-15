@@ -1,4 +1,3 @@
-
 var bills = {
     amount : [124,48,268,180,42],
     tip_calculator : function ( totalBill, tipBill){

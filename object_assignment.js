@@ -16,7 +16,6 @@ var john = {
     }
 };
 
-
 mark.calc_bmi();
 john.calc_bmi();
 console.log(mark.bmi);
