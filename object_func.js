@@ -1,13 +1,14 @@
 var person = {
     firstName : 'John',
     lastName : 'Smith',
-    dob : 1990,
+    birthYear : 1990,
     family : ['Jane','Mark','Bob','Emily'],
     job : 'teacher',
     isMarried : true,
-    caclAge : function(dob){
-        return 2019 - dob;
+    caclAge : function(){
+        this.age =  2019 - this.birthYear;
     }
 };
 
-console.log(person.caclAge(person.dob));
+person.caclAge();
+console.log(person);
