@@ -32,11 +32,12 @@ var totalBill = [];
 var tipBill = [];
 
 bills.tip_calculator( totalBill, tipBill);
+console.log('The tipBill array');
+for( var i=0; i< tipBill.length; i++){
+console.log(tipBill[i].toFixed(2));
+}
+
 console.log('The totalBill array :');
 for( var i=0; i< totalBill.length; i++){
     console.log(totalBill[i]);
-}
-console.log('The tipBill array');
-for( var i=0; i< tipBill.length; i++){
-console.log(tipBill[i]);
 }
