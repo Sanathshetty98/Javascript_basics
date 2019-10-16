@@ -1,0 +1,26 @@
+body{
+    background-color: gainsboro;
+
+}
+footer{
+    position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    font : inherit;
+    text-align: center;
+}
+.text{
+    background-color: aliceblue;
+    text-align: justify;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px 10px;
+    width: 50%;
+    margin: auto;
+}
+
+.container{
+    margin: auto;
+}

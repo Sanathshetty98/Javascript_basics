@@ -26,7 +26,6 @@ var bills = {
         }
     }
 }
-
 var totalBill = [];
 var tipBill = [];
 
