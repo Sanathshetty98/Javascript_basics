@@ -2,6 +2,10 @@ body{
     background-color: gainsboro;
 
 }
+a{  
+    color: black;
+    text-decoration: none;
+}
 footer{
     position: fixed;
     width: 100%;
@@ -12,15 +16,55 @@ footer{
 }
 .text{
     background-color: aliceblue;
-    text-align: justify;
+    border: 2px solid navy;
+    text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
     font-size: 18px;
     font-weight: 500;
+    line-height: 1.6 em;
     padding: 10px 10px;
     width: 50%;
     margin: auto;
 }
-
+.text h1{
+    text-align: center;
+}
+.text p {
+    text-align: justify;
+}
 .container{
+    width: 80%;
     margin: auto;
+}
+.myform{
+    margin: auto;
+    margin-left: 22.5%;
+    padding: 20px;
+}
+.myform .form-group{
+    padding-bottom: 20px;
+}
+.myform label{
+    display: block;
+}
+.myform input[type="text"],.myform input[type="email"],.myform textarea{
+    width: 100%;
+    padding: 8px;
+}
+.button{
+    background-color: black;
+    border: none;
+    padding: 10px 15px;
+    color: white;
+}
+.button:hover{
+    background-color: red;   
+}
+
+.block{
+    float: left;
+    width: 33.3%;
+    border: 1px solid #eee;
+    padding: 10px;
+    box-sizing: border-box;
 }
