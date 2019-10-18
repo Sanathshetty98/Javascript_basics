@@ -1,4 +1,4 @@
-var arr = [1925, 1989, 1978, 2005, 1995];
+var arr = [1965, 1989, 1978, 2005, 1995];
 
 var age = ageCalc( arr, fn);
 console.log( age );
@@ -7,7 +7,7 @@ console.log( Above18 );
 var HeartRate = ageCalc( age, maxHeartRate);
 console.log(HeartRate);
 function ageCalc( arr , fn){
-    arrFinal = []
+    var arrFinal = []
     for(var i =0 ; i<arr.length ; i++){
         arrFinal.push(fn(arr[i]));
     }
