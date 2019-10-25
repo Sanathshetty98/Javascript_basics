@@ -9,13 +9,22 @@
 <body>
     <h1>Ajax</h1>
     <script>
-        fetch('https://cors-anywhere.herokuapp.com/https://www.metaweather.com/api/location/search/?query=san')
-        .then(result => {
-        console.log(result);
-        })
-        .catch( error => {
-        console.log(error)
-        });
+        function getWeather(woeid){
+            fetch(`https://cors-anywhere.herokuapp.com/https://www.metaweather.com/api/location/${woeid}/`)
+            .then(result => {
+            console.log(result);
+            return result.json();
+            })
+            .then(data => {
+                let today = data.consolidated_weather[0];
+                console.log(`Today the temperature in ${data.title} will stay between ${today.min_temp}°C and ${today.max_temp}°C`);
+            })
+            .catch( error => {
+            console.log(error)
+            });
+            }
+        getWeather(2487956);
+        getWeather(44418);
     </script>
 </body>
 </html>
