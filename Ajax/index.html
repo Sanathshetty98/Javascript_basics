@@ -25,7 +25,7 @@
             }
         getWeather(2487956);
         getWeather(44418);
-
+        
         async function getWeatherAw(woeid){
             try
             {
@@ -33,6 +33,7 @@
                 const data = await result.json();
                 let tomorrow = data.consolidated_weather[1];
                 console.log(`Tomorrow the temperature in ${data.title} will stay between ${+(tomorrow.min_temp).toFixed(2)}°C and ${+(tomorrow.max_temp).toFixed(2)}°C`);
+                return data;
             }
             catch(error){
                 console.log(error);
@@ -40,6 +41,12 @@
         }
         getWeatherAw(2487956);
         getWeatherAw(44418);
+        let dataLondon;
+        getWeatherAw(44418).then(data => {
+            dataLondon = data;
+            console.log(dataLondon);
+        });
+
     </script>
 </body>
 </html>
