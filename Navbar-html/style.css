@@ -1,0 +1,82 @@
+body{
+    font: 15px/1.5 Arial, Helvetica,sans-serif;
+    padding:0;
+    margin:0;
+    background-color:#f4f4f4;
+  }
+
+.Navbar{
+    top: 0;
+    left: 0;
+    position: fixed;
+    margin: 0%;
+    padding: 0%;
+    height: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    display: flex;
+    flex-flow: column;
+    /*display: block;*/
+    background-color: #42f59e;
+    width: 100%;
+    justify-content: space-between;
+}
+.a{
+    text-decoration: none;
+    padding: 20px 150px;
+    float: left;
+    color: black;
+    border: 0 2px solid #ccc;
+    background-color: #42f59e;
+}
+.a:hover, a:focus{
+    background-color: #3cbd7e;
+    color: white;
+}
+/* .active{
+    background-color: #3cbd7e;
+    color: white;
+}  */
+
+.Content{
+    margin-top: 90px;
+}
+.box {
+    border: 1px solid #eee;
+    box-shadow: 0 2px 3px #ccc;
+    margin-left: 25px;
+    float:left;
+    text-align: center;
+    width:30%;
+    padding:10px;
+}
+.box img:hover{
+    transform: scale(1.2);
+    transition: all .5s;
+    animation: rotation 2s infinite linear;
+  }
+  .Navbar i:hover, .Navbar ion-icon:hover, .Navbar img:hover{
+    animation: rotation 2s infinite linear;
+  }
+footer{
+    position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    font : inherit;
+    text-align: center;
+}
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+
+@media(min-width: 600px){
+    .Navbar{
+        flex-flow: row;
+    }
+}
