@@ -41,7 +41,7 @@ function showHeroes(jsonObj) {
             var listItem = document.createElement('li');
             listItem.textContent = superPowers[j];
             myList.appendChild(listItem);
-            }
+        }
 
         myArticle.appendChild(myH2);
         myArticle.appendChild(myPara1);
@@ -50,5 +50,5 @@ function showHeroes(jsonObj) {
         myArticle.appendChild(myList);
 
         section.appendChild(myArticle);
-        }
+    }
 }
