@@ -2,7 +2,7 @@ body{
     font: 15px/1.5 Arial, Helvetica,sans-serif;
     padding:0;
     margin:0;
-    background-color:#f4f4f4;
+    background-color:#ffffff;
   }
 
 .Navbar{
@@ -33,30 +33,64 @@ body{
     background-color: #3cbd7e;
     color: white;
 }
-/* .active{
+.active{
     background-color: #3cbd7e;
     color: white;
-}  */
+} 
 
 .Content{
     margin-top: 90px;
+}
+.Content1{
+  margin-top: 60px;
+  display: inline-block;
+  align-items: center;
+  /* flex-wrap: wrap; */
 }
 .box {
     border: 1px solid #eee;
     box-shadow: 0 2px 3px #ccc;
     margin-left: 25px;
-    float:left;
+    float:left; 
     text-align: center;
     width:30%;
     padding:10px;
 }
+.box1 {
+  margin: 2px 5px;
+  margin-bottom: 60px;
+  border: 1px solid #3cbd7e;
+  float:left;
+  text-align: center;
+  width:15%; /*auto*/
+  height: 100%;
+  flex-grow: 1;
+}
+.box2 {
+  float:left;
+  text-align: center;
+  width:68.45%; /*fit-content*/
+  flex-grow: 3;
+}
+.box1 p, .box2 p{
+  font-size: 16px;
+  line-height: 1.6em;
+  text-align: justify ;
+  padding: 8px;
+}
+.box2 p, .box2 img{
+  text-align: center;
+}
 .box img:hover{
     transform: scale(1.2);
     transition: all .5s;
-    animation: rotation 2s infinite linear;
+    /* animation: rotation 2s infinite linear; */
   }
-  .Navbar i:hover, .Navbar ion-icon:hover, .Navbar img:hover{
-    animation: rotation 2s infinite linear;
+  /* .Navbar i:hover, .Navbar ion-icon:hover, .Navbar img:hover{
+     animation: rotation 2s infinite linear; 
+  } */
+  .Content1 img{
+    display:block;
   }
 footer{
     position: fixed;
@@ -65,6 +99,9 @@ footer{
     bottom: 0;
     font : inherit;
     text-align: center;
+    background-color: #42f59e;
+    height: 45px;
+    width: 100%;
 }
 @keyframes rotation {
     from {
